@@ -1,0 +1,15 @@
+[Unit]
+Description=WXBLE BTHome listener
+After=bluetooth.service
+Requires=bluetooth.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/wxble/data
+ExecStart=/opt/wxble/venv/bin/python /opt/wxble/wxble.py
+Restart=always
+RestartSec=5
+User=pi
+
+[Install]
+WantedBy=multi-user.target
