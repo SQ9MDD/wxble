@@ -157,3 +157,7 @@ You can also run WXBLE manually for testing:
 cd /opt/wxble/data
 /opt/wxble/venv/bin/python /opt/wxble/wxble.py
 ```
+
+## License
+
+WXBLE is released under the MIT License.
