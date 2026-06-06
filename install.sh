@@ -35,14 +35,14 @@ sudo systemctl enable wxble.service
 echo
 echo "WXBLE installed."
 echo
-echo "Start service:"
+echo "Start:"
 echo "  sudo systemctl start wxble"
 echo
-echo "Check status:"
+echo "Status:"
 echo "  systemctl status wxble --no-pager"
 echo
-echo "View logs:"
+echo "Logs:"
 echo "  journalctl -u wxble -f"
 echo
-echo "JSON data directory:"
-echo "  $APP_DIR/data/"
+echo "Data:"
+echo "  ls -l $APP_DIR/data/"
