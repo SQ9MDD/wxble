@@ -41,23 +41,53 @@ It only listens for BLE advertisements and writes the latest decoded data to fil
 
 ```json
 {
-  "mac": "AA:BB:CC:DD:EE:FF",
-  "name": "BTHome Sensor",
-  "rssi": -67,
-  "last_seen_utc": "2026-06-06T11:34:22.123456+00:00",
-  "source": "wxble",
-  "payload": {
+  "mac": "10:B4:1D:1A:6C:22",
+  "name": "AHT10",
+  "rssi": -92,
+  "first_seen_utc": "2026-06-06T21:36:52.395804+00:00",
+  "last_seen_utc": "2026-06-07T05:16:30.664575+00:00",
+  "last_update_utc": "2026-06-07T05:16:30.664575+00:00",
+  "source": "bthome_ble",
+  "status": {
     "bthome_version": 2,
     "encrypted": false,
     "trigger_based": false,
-    "decode_status": "ok",
-    "battery_percent": 92,
-    "temperature_c": 22.41,
-    "humidity_percent": 48.12
+    "decode_status": "ok"
+  },
+  "payload": {
+    "battery_percent": 22,
+    "temperature_c": 20.68,
+    "voltage_v": 3.532,
+    "humidity_percent": 56,
+    "count": 618603
+  },
+  "field_updated_utc": {
+    "battery_percent": "2026-06-07T05:16:30.664575+00:00",
+    "temperature_c": "2026-06-07T05:16:30.664575+00:00",
+    "voltage_v": "2026-06-07T05:16:30.664575+00:00",
+    "humidity_percent": "2026-06-07T05:16:30.664575+00:00",
+    "count": "2026-06-07T05:16:30.664575+00:00"
+  },
+  "last_frame": {
+    "payload": {
+      "battery_percent": 22,
+      "temperature_c": 20.68,
+      "voltage_v": 3.532,
+      "humidity_percent": 56,
+      "count": 618603
+    },
+    "status": {
+      "decode_status": "ok",
+      "unknown_object": null,
+      "unknown_data_hex": null,
+      "decode_error": null,
+      "note": null
+    },
+    "raw_service_data_hex": "40 01 16 02 14 08 0c cc 0d 2e 38 3e 6b 70 09 00"
   },
   "raw": {
     "service_uuid": "0000fcd2-0000-1000-8000-00805f9b34fb",
-    "service_data_hex": "40 01 5c 02 c1 08 03 cc 12"
+    "service_data_hex": "40 01 16 02 14 08 0c cc 0d 2e 38 3e 6b 70 09 00"
   }
 }
 ```
